@@ -9,8 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            NavigationView{
+                VStack{
+                    Text("APP NAME HERE")
+                        .padding()
+                    
+                    NavigationLink(
+                        destination: QuizPage(),
+                        label: {
+                            Text("Take a quiz")
+                        })
+                        .padding()
+                    
+                    NavigationLink(
+                        destination: AboutPage(),
+                        label: {
+                            Text("About this app")
+                        })
+                        .padding()
+                }
+            }
+            
+            
+        }
     }
 }
 
