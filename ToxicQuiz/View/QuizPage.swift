@@ -8,41 +8,63 @@
 import SwiftUI
 
 struct QuizPage: View {
+    
+    var questionText = ""
+    @State var disableButtons = false
+    @State var quizBrain = QuizBrain()
+    
     var body: some View {
         ZStack{
             VStack{
                 Spacer()
-                Text("Here will be quiz question")
-                    .padding()
+                VStack{
+                    Text(quizBrain.getQuestionText())
+                        .frame(width: UIScreen.main.bounds.size.width - 25, height: 100, alignment: .leading)
+                    Text(quizBrain.getResults())
+                        
+                        .frame(width: UIScreen.main.bounds.size.width - 25, height: 100, alignment: .leading)
+                }
+                
                 Spacer()
-                Button("Never"){
-                    
-                }
-                .padding()
                 
-                Button("Sometimes"){
+                VStack{
+                    Button("Never"){
+                        quizBrain.addScore(quizAnswer: 1)
+                        quizBrain.nextQuestion()
+                        
+                    }
+                    .padding()
                     
-                }
-                .padding()
-                
-                Button("Usually"){
+                    Button("Sometimes"){
+                        quizBrain.addScore(quizAnswer: 2)
+                        quizBrain.nextQuestion()
+                    }
+                    .padding()
                     
-                }
-                .padding()
-                
-                Button("Always"){
+                    Button("Usually"){
+                        quizBrain.addScore(quizAnswer: 3)
+                        quizBrain.nextQuestion()
+                    }
+                    .padding()
                     
+                    Button("Always"){
+                        quizBrain.addScore(quizAnswer: 4)
+                        quizBrain.nextQuestion()
+                    }
+                    .padding()
                 }
-                .padding()
                 
                 Spacer()
             }
+            
         }
     }
-}
-
-struct QuizPage_Previews: PreviewProvider {
-    static var previews: some View {
-        QuizPage()
+    
+    
+    
+    struct QuizPage_Previews: PreviewProvider {
+        static var previews: some View {
+            QuizPage()
+        }
     }
 }

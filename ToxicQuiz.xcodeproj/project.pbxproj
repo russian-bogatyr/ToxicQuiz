@@ -15,6 +15,7 @@
 		4383B4C126A249BE006737F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383B4C026A249BE006737F1 /* ContentView.swift */; };
 		4383B4C326A249BF006737F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4383B4C226A249BF006737F1 /* Assets.xcassets */; };
 		4383B4C626A249BF006737F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4383B4C526A249BF006737F1 /* Preview Assets.xcassets */; };
+		43E1EE7A26A353F500E61E40 /* ResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E1EE7926A353F500E61E40 /* ResultPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4383B4C226A249BF006737F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4383B4C526A249BF006737F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4383B4C726A249BF006737F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E1EE7926A353F500E61E40 /* ResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				435BA14326A2582800B1420D /* QuizPage.swift */,
 				435BA14526A2592300B1420D /* AboutPage.swift */,
+				43E1EE7926A353F500E61E40 /* ResultPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				435BA14026A2508900B1420D /* Question.swift in Sources */,
+				43E1EE7A26A353F500E61E40 /* ResultPage.swift in Sources */,
 				4383B4C126A249BE006737F1 /* ContentView.swift in Sources */,
 				435BA14626A2592300B1420D /* AboutPage.swift in Sources */,
 				4383B4BF26A249BE006737F1 /* ToxicQuizApp.swift in Sources */,
