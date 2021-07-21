@@ -19,7 +19,6 @@ struct QuizPage: View {
                     Text(quizBrain.getQuestionText())
                         .frame(width: UIScreen.main.bounds.size.width - 25, height: 100, alignment: .leading)
                     Text(quizBrain.getResults())
-                        
                         .frame(width: UIScreen.main.bounds.size.width - 25, height: 100, alignment: .leading)
                 }
                 

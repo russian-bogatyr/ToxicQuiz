@@ -12,11 +12,14 @@ struct ResultPage: View {
     
     
     var body: some View {
-        ZStack{
-            VStack{
-                
+        NavigationView{
+            ZStack{
+                VStack{
+                    
+                }
             }
         }
+        
     }
 }
 

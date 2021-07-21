@@ -11,7 +11,7 @@ import Foundation
 struct QuizBrain {
     var questionNumber = 0
     var quizScore = 0
-    var result = ""
+    var result = " "
     
     let quiz = [
         Question(q: "I tend take responsibility for the feelings and / or behavior of others"),
@@ -44,8 +44,10 @@ struct QuizBrain {
             questionNumber += 1
         }
         else{
-            return
+            calculateResult()
         }
+        
+        
     }
     
     mutating func addScore(score: Int){
@@ -53,9 +55,14 @@ struct QuizBrain {
             quizScore += score
         }
 
+        
     }
     
-    mutating func getResults() -> String {
+    func getResults() -> String {
+        return result
+    }
+    
+    mutating func calculateResult() {
         if quizScore <= 25 {
             result = "no toxic"
         }
@@ -68,7 +75,6 @@ struct QuizBrain {
         else{
             result = "high toxic"
         }
-        return result
     }
 }
 
