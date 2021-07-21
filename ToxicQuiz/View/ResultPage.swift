@@ -9,22 +9,23 @@ import SwiftUI
 
 struct ResultPage: View {
     
-    
+    var result: String
     
     var body: some View {
-        NavigationView{
+
             ZStack{
                 VStack{
-                    
+                    Text(result)
+                        .frame(width: UIScreen.main.bounds.size.width - 35, height: 150, alignment: .leading)
                 }
             }
-        }
+        
         
     }
 }
 
 struct ResultPage_Previews: PreviewProvider {
     static var previews: some View {
-        ResultPage()
+        ResultPage(result: "Results here")
     }
 }

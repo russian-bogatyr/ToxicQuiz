@@ -9,6 +9,7 @@ import SwiftUI
 
 struct QuizPage: View {
     
+
     @State var quizBrain = QuizBrain()
     
     var body: some View {
@@ -17,12 +18,21 @@ struct QuizPage: View {
                 Spacer()
                 VStack{
                     Text(quizBrain.getQuestionText())
-                        .frame(width: UIScreen.main.bounds.size.width - 25, height: 100, alignment: .leading)
-                    Text(quizBrain.getResults())
-                        .frame(width: UIScreen.main.bounds.size.width - 25, height: 100, alignment: .leading)
+                        .frame(width: UIScreen.main.bounds.size.width - 35, height: 200, alignment: .leading)
+                        .font(.system(size: 25))
+                    
+                    
+                    
                 }
+                .padding()
                 
-                Spacer()
+                NavigationLink(
+                    destination: ResultPage(result: quizBrain.getResults()),
+                    label: {
+                        Text("Results")
+                    })
+                    .opacity(quizBrain.isEnabled ? 1 : 0)
+                    .padding()
                 
                 VStack{
                     Button("Never"){
@@ -49,6 +59,9 @@ struct QuizPage: View {
                         quizBrain.nextQuestion()
                     }
                     .padding()
+                    
+                    
+                    
                 }
                 
                 Spacer()
@@ -57,7 +70,7 @@ struct QuizPage: View {
         }
     }
     
-    
+
     
     struct QuizPage_Previews: PreviewProvider {
         static var previews: some View {

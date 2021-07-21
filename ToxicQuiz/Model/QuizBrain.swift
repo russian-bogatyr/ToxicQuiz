@@ -9,9 +9,11 @@ import Foundation
 
 
 struct QuizBrain {
+    
+    var isEnabled = false
     var questionNumber = 0
     var quizScore = 0
-    var result = " "
+    var result = "Please finish the quiz to see your result"
     
     let quiz = [
         Question(q: "I tend take responsibility for the feelings and / or behavior of others"),
@@ -45,6 +47,7 @@ struct QuizBrain {
         }
         else{
             calculateResult()
+            enableButton()
         }
         
         
@@ -54,8 +57,6 @@ struct QuizBrain {
         if questionNumber + 1 < quiz.count {
             quizScore += score
         }
-
-        
     }
     
     func getResults() -> String {
@@ -75,7 +76,14 @@ struct QuizBrain {
         else{
             result = "high toxic"
         }
+        
     }
+    mutating func enableButton() {
+        isEnabled = true
+        
+    }
+    
+    
 }
 
 
