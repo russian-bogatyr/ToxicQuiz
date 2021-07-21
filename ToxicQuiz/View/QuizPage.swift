@@ -9,8 +9,6 @@ import SwiftUI
 
 struct QuizPage: View {
     
-    var questionText = ""
-    @State var disableButtons = false
     @State var quizBrain = QuizBrain()
     
     var body: some View {
@@ -29,26 +27,26 @@ struct QuizPage: View {
                 
                 VStack{
                     Button("Never"){
-                        quizBrain.addScore(quizAnswer: 1)
+                        quizBrain.addScore(score: 1)
                         quizBrain.nextQuestion()
                         
                     }
                     .padding()
                     
                     Button("Sometimes"){
-                        quizBrain.addScore(quizAnswer: 2)
+                        quizBrain.addScore(score: 2)
                         quizBrain.nextQuestion()
                     }
                     .padding()
                     
                     Button("Usually"){
-                        quizBrain.addScore(quizAnswer: 3)
+                        quizBrain.addScore(score: 3)
                         quizBrain.nextQuestion()
                     }
                     .padding()
                     
                     Button("Always"){
-                        quizBrain.addScore(quizAnswer: 4)
+                        quizBrain.addScore(score: 4)
                         quizBrain.nextQuestion()
                     }
                     .padding()

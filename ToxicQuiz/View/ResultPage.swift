@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ResultPage: View {
     
-    var quizResult = QuizBrain().getResults()
+    
     
     var body: some View {
         ZStack{
             VStack{
-                Text(verbatim: quizResult)
+                
             }
         }
     }
