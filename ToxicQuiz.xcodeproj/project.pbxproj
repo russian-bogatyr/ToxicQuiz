@@ -16,6 +16,9 @@
 		4383B4C326A249BF006737F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4383B4C226A249BF006737F1 /* Assets.xcassets */; };
 		4383B4C626A249BF006737F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4383B4C526A249BF006737F1 /* Preview Assets.xcassets */; };
 		43E1EE7A26A353F500E61E40 /* ResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E1EE7926A353F500E61E40 /* ResultPage.swift */; };
+		43EC744926A9D83400D9EBD2 /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC744826A9D83400D9EBD2 /* CustomNavigationButton.swift */; };
+		43EC744B26A9D89D00D9EBD2 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC744A26A9D89D00D9EBD2 /* BlankView.swift */; };
+		43EC744D26A9E75300D9EBD2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC744C26A9E75300D9EBD2 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		4383B4C526A249BF006737F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4383B4C726A249BF006737F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43E1EE7926A353F500E61E40 /* ResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPage.swift; sourceTree = "<group>"; };
+		43EC744826A9D83400D9EBD2 /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
+		43EC744A26A9D89D00D9EBD2 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		43EC744C26A9E75300D9EBD2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				435BA14326A2582800B1420D /* QuizPage.swift */,
 				435BA14526A2592300B1420D /* AboutPage.swift */,
 				43E1EE7926A353F500E61E40 /* ResultPage.swift */,
+				43EC744826A9D83400D9EBD2 /* CustomNavigationButton.swift */,
+				43EC744A26A9D89D00D9EBD2 /* BlankView.swift */,
+				43EC744C26A9E75300D9EBD2 /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,8 +190,11 @@
 				43E1EE7A26A353F500E61E40 /* ResultPage.swift in Sources */,
 				4383B4C126A249BE006737F1 /* ContentView.swift in Sources */,
 				435BA14626A2592300B1420D /* AboutPage.swift in Sources */,
+				43EC744D26A9E75300D9EBD2 /* CustomButton.swift in Sources */,
+				43EC744B26A9D89D00D9EBD2 /* BlankView.swift in Sources */,
 				4383B4BF26A249BE006737F1 /* ToxicQuizApp.swift in Sources */,
 				435BA14226A2509900B1420D /* QuizBrain.swift in Sources */,
+				43EC744926A9D83400D9EBD2 /* CustomNavigationButton.swift in Sources */,
 				435BA14426A2582800B1420D /* QuizPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
