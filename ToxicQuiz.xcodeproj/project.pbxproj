@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43054D7526BF02C300E3F51C /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43054D7426BF02C300E3F51C /* Instructions.swift */; };
 		435BA14026A2508900B1420D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BA13F26A2508900B1420D /* Question.swift */; };
 		435BA14226A2509900B1420D /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BA14126A2509900B1420D /* QuizBrain.swift */; };
 		435BA14426A2582800B1420D /* QuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BA14326A2582800B1420D /* QuizPage.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43054D7426BF02C300E3F51C /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		435BA13F26A2508900B1420D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		435BA14126A2509900B1420D /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		435BA14326A2582800B1420D /* QuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				43EC744826A9D83400D9EBD2 /* CustomNavigationButton.swift */,
 				43EC744A26A9D89D00D9EBD2 /* BlankView.swift */,
 				43EC744C26A9E75300D9EBD2 /* CustomButton.swift */,
+				43054D7426BF02C300E3F51C /* Instructions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				435BA14226A2509900B1420D /* QuizBrain.swift in Sources */,
 				43EC744926A9D83400D9EBD2 /* CustomNavigationButton.swift in Sources */,
 				435BA14426A2582800B1420D /* QuizPage.swift in Sources */,
+				43054D7526BF02C300E3F51C /* Instructions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

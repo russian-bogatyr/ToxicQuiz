@@ -9,30 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            NavigationView{
+        NavigationView{
+            ZStack{
+                LinearGradient(gradient: Gradient(colors: [Color("BlueGrotto"),Color("Spearmint")]), startPoint: .bottom, endPoint: .top)
+                    .ignoresSafeArea()
                 VStack{
+
                     Text("APP NAME HERE")
                         .padding()
                     
-                    NavigationLink(
-                        destination: QuizPage(),
-                        label: {
-                            Text("Take a quiz")
-                        })
+                    CustomNavigationButton(viewToShow: AnyView(QuizPage()), buttonTitle: "Take Quiz")
                         .padding()
-                    
-                    NavigationLink(
-                        destination: AboutPage(),
-                        label: {
-                            Text("About this app")
-                        })
+
+                    CustomNavigationButton(viewToShow: AnyView(AboutPage()), buttonTitle: "About This App")
                         .padding()
                 }
             }
             
-            
         }
+        
+        
+        
+        
     }
 }
 

@@ -65,16 +65,16 @@ struct QuizBrain {
     
     mutating func calculateResult() {
         if quizScore <= 25 {
-            result = "no toxic"
+            result = "Little dependent and/or high degree of counterdependent models"
         }
         else if quizScore <= 40 {
-            result = "slightly toxic"
+            result = "Average degree of dependent and/or counterdependent models"
         }
         else if quizScore <= 60 {
-            result = "medium toxic"
+            result = "High degree of codependent models"
         }
         else{
-            result = "high toxic"
+            result = "Very high degree of codependent models"
         }
         
     }

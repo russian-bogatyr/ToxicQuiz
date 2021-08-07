@@ -20,6 +20,8 @@ struct QuizPage: View {
             VStack{
                 Spacer()
                 VStack{
+                    Text("20/20")
+                        .frame(width: 50, height: 25, alignment:.topLeading)
                     Text(quizBrain.getQuestionText())
                         .frame(width: UIScreen.main.bounds.size.width - 35, height: 200, alignment: .leading)
                         .font(.system(size: 25))
@@ -92,6 +94,7 @@ struct QuizPage: View {
                 
                 Spacer()
             }
+
             
             
         }
